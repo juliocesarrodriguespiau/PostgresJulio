@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Postgres Júlio</title>
-</head>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Agenda de contatos</title>
+    </head>
     <body>
-        <h1>Teste Postgres Júlio</h1>
-        <?php
-            echo "Julio César R. Piau";
-            echo "27/01/2021";
-        ?>
+        <form action="?act=save" method="POST" name="form1" >
+          <h1>Agenda de contatos</h1>
+          <hr>
+          <input type="hidden" name="id" />
+          Nome:
+          <input type="text" name="nome" />
+          E-mail:
+          <input type="text" name="email" />
+          Telefone:
+         <input type="text" name="celular" />
+         <input type="submit" value="salvar" />
+         <input type="reset" value="Novo" />
+         <hr>
+       </form>
     </body>
 </html>
-
