@@ -10,7 +10,6 @@
         <?php
             echo "Julio César R. Piau";
             echo "27/01/2021";
-            echo "123";
         ?>
     </body>
 </html>
