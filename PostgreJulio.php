@@ -10,26 +10,27 @@
         <br>
         <?php
 
-        include('conexao.php');
-        $object = new Conexao();
-        $conexao = $object->Conectar();
+
+        // include('conexao.php');
+        // $object = new Conexao();
+        // $conexao = $object->Conectar();
 
 
-        $query = "SELECT nome, email, telefone FROM usuario";
-        $return = $conexao->prepare($query);
-        print_r($return);
-        echo "<br>";
-        $return->execute();
-        print_r($return);
-        $dados = $return->fetchAll();
+        // $query = "SELECT nome, email, telefone FROM usuario";
+        // $return = $conexao->prepare($query);
+        // print_r($return);
+        // echo "<br>";
+        // $return->execute();
+        // print_r($return);
+        // $dados = $return->fetchAll();
 
-        echo "index.php";
-        echo "<br>";
+        // echo "index.php";
+        // echo "<br>";
 
-        var_dump($dados);
-        echo "<br>";
+        // var_dump($dados);
+        // echo "<br>";
 
-        print_r($query);
+        // print_r($query);
 
         
             // $nome = "Júlio César Rodrigues Piau";
@@ -79,12 +80,12 @@
             //     echo "<br>";
             // }
 
-            // try {
-            //     myPDO = new PDO("pgsql:host=locahost;dbname:CadastroUsuario","postgres","postgre");
-            //     echo "Conexão com PDO Postgres feita com Sucesso!";
-            // }catch{(PDOException $e)
-            //     echo $e->getMessage();
-            // }
+            try {
+                myPDO = new PDO("pgsql:host=locahost;dbname:CadastroUsuario","postgres","postgre");
+                echo "Conexão com PDO Postgres feita com Sucesso!";
+            }catch{(PDOException $e)
+                echo $e->getMessage();
+            }
 
     
             //phpinfo();
